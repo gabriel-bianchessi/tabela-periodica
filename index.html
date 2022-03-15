@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela Periódica Interativa</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/tabela.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<nav>
+  <div class="nav-right">
+    <a href="#"><h1>Tabela Periódica</h1></a>
+  </div>
+  <div class="nav-left">
+    <a href="pontos.html">Pontos Importantes</a>
+    <a href="apps.html">Apps Semelhantes</a>
+    <a href="perguntas.html">Perguntas e Respostas</a>
+    <a href="refs.html">Referências</a>
+  </div>
+</nav>
+
+<section>
+  <table class="tabela">
+    <thead>
+      <tr>
+        <!--Indicadores de grupos-->
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>11</th>
+        <th>12</th>
+        <th>13</th>
+        <th>14</th>
+        <th>15</th>
+        <th>16</th>
+        <th>17</th>
+        <th>18</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!--1º Período-->
+      <tr>
+        <td onclick="Modal.open(1)" class="hidrogenio">
+          <small>1</small>
+          <h1>H</h1>
+          <p>Hidrogênio</p>
+          <small>1.007</small>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td onclick="Modal.open(2)" class="gn">
+          <small>2</small>
+          <h1>He</h1>
+          <p>Hélio</p>
+          <small>4.002602</small>
+        </td>
+      </tr>
+      <!--2º Período-->
+      <tr>
+        <td onclick="Modal.open(3)" class="alcalino">
+          <small>3</small>
+          <h1>Li</h1>
+          <p>Lítio</p>
+          <small>6.94</small>
+        </td>
+        <td onclick="Modal.open(4)" class="at">
+          <small>4</small>
+          <h1>Be</h1>
+          <p>Berílio</p>
+          <small>9.01</small>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td onclick="Modal.open(5)" class="nao-metais">
+          <small>5</small>
+          <h1>B</h1>
+          <p>Boro</p>
+          <small>10.81</small>
+        </td>
+        <td onclick="Modal.open(6)" class="nao-metais">
+          <small>6</small>
+          <h1>C</h1>
+          <p>Carbono</p>
+          <small>12.01</small>
+        </td>
+        <td onclick="Modal.open(7)" class="nao-metais">
+          <small>7</small>
+          <h1>N</h1>
+          <p>Nitrogênio</p>
+          <small>14.006</small>
+        </td>
+        <td onclick="Modal.open(8)" class="nao-metais">
+          <small>8</small>
+          <h1>O</h1>
+          <p>Oxigênio</p>
+          <small>15.99</small>
+        </td>
+        <td onclick="Modal.open(9)" class="nao-metais">
+          <small>9</small>
+          <h1>F</h1>
+          <p>Flúor</p>
+          <small>18.99</small>
+        </td>
+        <td onclick="Modal.open(10)"class="gn">
+          <small>10</small>
+          <h1>Ne</h1>
+          <p>Neônio</p>
+          <small>20.17</small>
+        </td>
+      </tr>
+      <!--3º Período-->
+      <tr>
+        <td onclick="Modal.open(11)" class="alcalino">
+          <small>11</small>
+          <h1>Na</h1>
+          <p>Sódio</p>
+          <small>22.98</small>
+        </td>        
+        <td onclick="Modal.open(12)" class="at">
+          <small>12</small>
+          <h1>Mg</h1>
+          <p>Magnésio</p>
+          <small>24.305</small>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td onclick="Modal.open(13)" class="outros-metais">
+          <small>13</small>
+          <h1>Al</h1>
+          <p>Alumínio</p>
+          <small>26.98</small>
+        </td>        
+        <td onclick="Modal.open(14)" class="nao-metais">
+          <small>14</small>
+          <h1>Si</h1>
+          <p>Silício</p>
+          <small>28.08</small>
+        </td>        
+        <td onclick="Modal.open(15)" class="nao-metais">
+          <small>15</small>
+          <h1>P</h1>
+          <p>Fósforo</p>
+          <small>30.97</small>
+        </td>        
+        <td onclick="Modal.open(16)" class="nao-metais">
+          <small>16</small>
+          <h1>S</h1>
+          <p>Enxofre</p>
+          <small>32.06</small>
+        </td>        
+        <td onclick="Modal.open(17)" class="nao-metais">
+          <small>17</small>
+          <h1>Cl</h1>
+          <p>Cloro</p>
+          <small>35.45</small>
+        </td>        
+        <td onclick="Modal.open(18)" class="gn">
+          <small>18</small>
+          <h1>Ar</h1>
+          <p>Argônio</p>
+          <small>39.94</small>
+        </td>
+      </tr>
+      <!--4º Período-->
+      <tr>
+        <td onclick="Modal.open(19)" class="alcalino">
+          <small>19</small>
+          <h1>K</h1>
+          <p>Potássio</p>
+          <small>39.09</small>
+        </td>
+        <td onclick="Modal.open(20)" class="at">
+          <small>20</small>
+          <h1>Ca</h1>
+          <p>Cálcio</p>
+          <small>40.07</small>
+        </td>
+        <td onclick="Modal.open(21)" class="metais-transicao">
+          <small>21</small>
+          <h1>Sc</h1>
+          <p>Escândio</p>
+          <small>44.95</small>
+        </td>
+        <td onclick="Modal.open(22)" class="metais-transicao">
+          <small>22</small>
+          <h1>Ti</h1>
+          <p>Titânio</p>
+          <small>47.86</small>
+        </td>
+        <td onclick="Modal.open(23)" class="metais-transicao">
+          <small>23</small>
+          <h1>V</h1>
+          <p>Vanádio</p>
+          <small>50.94</small>
+        </td>
+        <td onclick="Modal.open(24)" class="metais-transicao">
+          <small>24</small>
+          <h1>Cr</h1>
+          <p>Cromo</p>
+          <small>51.99</small>
+        </td>
+        <td onclick="Modal.open(25)" class="metais-transicao">
+          <small>25</small>
+          <h1>Mn</h1>
+          <p>Manganês</p>
+          <small>54.93</small>
+        </td>
+        <td onclick="Modal.open(26)" class="metais-transicao">
+          <small>26</small>
+          <h1>Fe</h1>
+          <p>Ferro</p>
+          <small>55.84</small>
+        </td>
+        <td onclick="Modal.open(27)" class="metais-transicao">
+          <small>27</small>
+          <h1>Co</h1>
+          <p>Cobalto</p>
+          <small>58.93</small>
+        </td>
+        <td onclick="Modal.open(28)" class="metais-transicao">
+          <small>28</small>
+          <h1>Ni</h1>
+          <p>Níquel</p>
+          <small>58.69</small>
+        </td>
+        <td onclick="Modal.open(29)" class="metais-transicao">
+          <small>29</small>
+          <h1>Cu</h1>
+          <p>Cobre</p>
+          <small>63.54</small>
+        </td>
+        <td onclick="Modal.open(30)" class="metais-transicao">
+          <small>30</small>
+          <h1>Zn</h1>
+          <p>Zinco</p>
+          <small>65.38</small>
+        </td>
+        <td onclick="Modal.open(31)" class="outros-metais">
+          <small>31</small>
+          <h1>Ga</h1>
+          <p>Gálio</p>
+          <small>69.72</small>
+        </td>
+        <td onclick="Modal.open(32)" class="outros-metais">
+          <small>32</small>
+          <h1>Ge</h1>
+          <p>Germânio</p>
+          <small>72.64</small>
+        </td>
+        <td onclick="Modal.open(33)" class="nao-metais">
+          <small>33</small>
+          <h1>As</h1>
+          <p>Arsênio</p>
+          <small>74.92</small>
+        </td>
+        <td onclick="Modal.open(34)" class="nao-metais">
+          <small>34</small>
+          <h1>Se</h1>
+          <p>Selênio</p>
+          <small>78.96</small>
+        </td>
+        <td onclick="Modal.open(35)" class="nao-metais">
+          <small>35</small>
+          <h1>Br</h1>
+          <p>Bromo</p>
+          <small>79.90</small>
+        </td>
+        <td onclick="Modal.open(36)" class="gn">
+          <small>36</small>
+          <h1>Kr</h1>
+          <p>Criptônio</p>
+          <small>83.79</small>
+        </td>
+      </tr>
+      <!--5º Período-->
+      <tr>
+        <td onclick="Modal.open(37)" class="alcalino">
+          <small>37</small>
+          <h1>Rb</h1>
+          <p>Rubídio</p>
+          <small>85.46</small>
+        </td>
+        <td onclick="Modal.open(38)" class="at">
+          <small>38</small>
+          <h1>Sr</h1>
+          <p>Estrôncio</p>
+          <small>87.62</small>
+        </td>
+        <td onclick="Modal.open(39)" class="metais-transicao">
+          <small>39</small>
+          <h1>Y</h1>
+          <p>Ítrio</p>
+          <small>88.905</small>
+        </td>
+        <td onclick="Modal.open(40)" class="metais-transicao">
+          <small>40</small>
+          <h1>Zr</h1>
+          <p>Zircônio</p>
+          <small>91.22</small>
+        </td>
+        <td onclick="Modal.open(41)" class="metais-transicao">
+          <small>41</small>
+          <h1>Nb</h1>
+          <p>Nióbio</p>
+          <small>92.906</small>
+        </td>
+        <td onclick="Modal.open(42)" class="metais-transicao">
+          <small>42</small>
+          <h1>Mo</h1>
+          <p>Molibdênio</p>
+          <small>95.96</small>
+        </td>
+        <td onclick="Modal.open(43)" class="metais-transicao">
+          <small>43</small>
+          <h1>Tc</h1>
+          <p>Tecnácio</p>
+          <small>98</small>
+        </td>
+        <td onclick="Modal.open(44)" class="metais-transicao">
+          <small>44</small>
+          <h1>Ru</h1>
+          <p>Rutênio</p>
+          <small>101.07</small>
+        </td>
+        <td onclick="Modal.open(45)" class="metais-transicao">
+          <small>45</small>
+          <h1>Rh</h1>
+          <p>Ródio</p>
+          <small>102.905</small>
+        </td>
+        <td onclick="Modal.open(46)" class="metais-transicao">
+          <small>46</small>
+          <h1>Pd</h1>
+          <p>Paládio</p>
+          <small>106.42</small>
+        </td>
+        <td onclick="Modal.open(47)" class="metais-transicao">
+          <small>47</small>
+          <h1>Ag</h1>
+          <p>Prata</p>
+          <small>107.86</small>
+        </td>
+        <td onclick="Modal.open(48)" class="metais-transicao">
+          <small>48</small>
+          <h1>Cd</h1>
+          <p>Cádmio</p>
+          <small>112.41</small>
+        </td>
+        <td onclick="Modal.open(49)" class="outros-metais">
+          <small>49</small>
+          <h1>In</h1>
+          <p>Índio</p>
+          <small>114.81</small>
+        </td>
+        <td onclick="Modal.open(50)" class="outros-metais">
+          <small>50</small>
+          <h1>Sn</h1>
+          <p>Estanho</p>
+          <small>118.71</small>
+        </td>
+        <td onclick="Modal.open(51)" class="outros-metais">
+          <small>51</small>
+          <h1>Sb</h1>
+          <p>Antimônio</p>
+          <small>121.76</small>
+        </td>
+        <td onclick="Modal.open(52)" class="nao-metais">
+          <small>52</small>
+          <h1>Te</h1>
+          <p>Telúrio</p>
+          <small>127.60</small>
+        </td>
+        <td onclick="Modal.open(53)" class="nao-metais">
+          <small>53</small>
+          <h1>I</h1>
+          <p>Iodo</p>
+          <small>126.904</small>
+        </td>
+        <td onclick="Modal.open(54)" class="gn">
+          <small>54</small>
+          <h1>Xe</h1>
+          <p>Xenônio</p>
+          <small>131.293</small>
+        </td>
+      </tr>
+      <!--6º Período-->
+      <tr>
+        <td onclick="Modal.open(55)" class="alcalino">
+          <small>55</small>
+          <h1>Cs</h1>
+          <p>Césio</p>
+          <small>132.905</small>
+        </td>
+        <td onclick="Modal.open(56)" class="at">
+          <small>56</small>
+          <h1>Ba</h1>
+          <p>Bário</p>
+          <small>137.32</small>
+        </td>
+        <td onclick="Modal.open(71)" class="metais-transicao">
+          <small>71</small>
+          <h1>Lu</h1>
+          <p>Lutécio</p>
+          <small>174.96</small>
+        </td>
+        <td onclick="Modal.open(72)" class="metais-transicao">
+          <small>72</small>
+          <h1>Hf</h1>
+          <p>Háfnio</p>
+          <small>178.49</small>
+        </td>
+        <td onclick="Modal.open(73)" class="metais-transicao">
+          <small>73</small>
+          <h1>Ta</h1>
+          <p>Tântalo</p>
+          <small>180.94</small>
+        </td>
+        <td onclick="Modal.open(74)" class="metais-transicao">
+          <small>74</small>
+          <h1>W</h1>
+          <p>Tungstênio</p>
+          <small>183.84</small>
+        </td>
+        <td onclick="Modal.open(75)" class="metais-transicao">
+          <small>75</small>
+          <h1>Re</h1>
+          <p>Rênio</p>
+          <small>186.207</small>
+        </td>
+        <td onclick="Modal.open(76)" class="metais-transicao">
+          <small>76</small>
+          <h1>Os</h1>
+          <p>Ósmio</p>
+          <small>190.23</small>
+        </td>
+        <td onclick="Modal.open(77)" class="metais-transicao">
+          <small>77</small>
+          <h1>Ir</h1>
+          <p>Irídio</p>
+          <small>192.21</small>
+        </td>
+        <td onclick="Modal.open(78)" class="metais-transicao">
+          <small>78</small>
+          <h1>Pt</h1>
+          <p>Platina</p>
+          <small>195.08</small>
+        </td>
+        <td onclick="Modal.open(79)" class="metais-transicao" >
+          <small>79</small>
+          <h1>Au</h1>
+          <p>Ouro</p>
+          <small>196.96</small>
+        </td>
+        <td onclick="Modal.open(80)" class="metais-transicao" >
+          <small>80</small>
+          <h1>Hg</h1>
+          <p>Mercúrio</p>
+          <small>200.59</small>
+        </td>
+        <td onclick="Modal.open(81)" class="outros-metais">
+          <small>81</small>
+          <h1>Tl</h1>
+          <p>Tálio</p>
+          <small>204.38</small>
+        </td>
+        <td onclick="Modal.open(82)" class="outros-metais">
+          <small>82</small>
+          <h1>Pb</h1>
+          <p>Chumbo</p>
+          <small>207.2</small>
+        </td>
+        <td onclick="Modal.open(83)" class="outros-metais">
+          <small>83</small>
+          <h1>Bi</h1>
+          <p>Bismuto</p>
+          <small>208.98</small>
+        </td>
+        <td onclick="Modal.open(84)" class="outros-metais">
+          <small>84</small>
+          <h1>Po</h1>
+          <p>Polônio</p>
+          <small>209</small>
+        </td>
+        <td onclick="Modal.open(85)" class="nao-metais">
+          <small>85</small>
+          <h1>At</h1>
+          <p>Astato</p>
+          <small>210</small>
+        </td>
+        <td onclick="Modal.open(86)" class="gn">
+          <small>86</small>
+          <h1>Rn</h1>
+          <p>Radônio</p>
+          <small>222</small>
+        </td>
+      </tr>
+      <!--7º Período-->
+      <tr>
+        <td onclick="Modal.open(87)" class="alcalino">
+          <small>87</small>
+          <h1>Fr</h1>
+          <p>Frâncio</p>
+          <small>223</small>
+        </td>
+        <td onclick="Modal.open(88)" class="at">
+          <small>88</small>
+          <h1>Ra</h1>
+          <p>Rádio</p>
+          <small>226</small>
+        </td>
+        <td onclick="Modal.open(103)" class="metais-transicao">
+          <small>103</small>
+          <h1>Lr</h1>
+          <p>Laurêncio</p>
+          <small>262</small>
+        </td>
+        <td onclick="Modal.open(104)" class="metais-transicao">
+          <small>104</small>
+          <h1>Rf</h1>
+          <p>Rutherfórdio</p>
+          <small>267</small>
+        </td>
+        <td onclick="Modal.open(105)" class="metais-transicao">
+          <small>105</small>
+          <h1>Db</h1>
+          <p>Dúbdnio</p>
+          <small>268</small>
+        </td>
+        <td onclick="Modal.open(106)" class="metais-transicao">
+          <small>106</small>
+          <h1>Sg</h1>
+          <p>Seabórgio</p>
+          <small>271</small>
+        </td>
+        <td onclick="Modal.open(107)" class="metais-transicao">
+          <small>107</small>
+          <h1>Bh</h1>
+          <p>Bóhrio</p>
+          <small>272</small>
+        </td>
+        <td onclick="Modal.open(108)" class="metais-transicao">
+          <small>108</small>
+          <h1>Hs</h1>
+          <p>Hássio</p>
+          <small>270</small>
+        </td>
+        <td onclick="Modal.open(109)" class="metais-transicao">
+          <small>109</small>
+          <h1>Mt</h1>
+          <p>Meitnério</p>
+          <small>276</small>
+        </td>
+        <td onclick="Modal.open(110)" class="metais-transicao">
+          <small>110</small>
+          <h1>Ds</h1>
+          <p>Darmstádtio</p>
+          <small>281</small>
+        </td>
+        <td onclick="Modal.open(111)" class="metais-transicao">
+          <small>111</small>
+          <h1>Rg</h1>
+          <p>Roentgênio</p>
+          <small>280</small>
+        </td>
+        <td onclick="Modal.open(112)" class="metais-transicao">
+          <small>112</small>
+          <h1>Cn</h1>
+          <p>Copernício</p>
+          <small>285</small>
+        </td>
+        <td onclick="Modal.open(113)" class="outros-metais">
+          <small>113</small>
+          <h1>Nh</h1>
+          <p>Nihônio</p>
+          <small>284</small>
+        </td>
+        <td onclick="Modal.open(114)" class="outros-metais">
+          <small>114</small>
+          <h1>Fl</h1>
+          <p>Fleróvio</p>
+          <small>289</small>
+        </td>
+        <td onclick="Modal.open(115)" class="outros-metais">
+          <small>115</small>
+          <h1>Mc</h1>
+          <p>Moscovio</p>
+          <small>288</small>
+        </td>
+        <td onclick="Modal.open(116)" class="outros-metais">
+          <small>116</small>
+          <h1>Lv</h1>
+          <p>Livermório</p>
+          <small>293</small>
+        </td>
+        <td onclick="Modal.open(117)" class="nao-metais">
+          <small>117</small>
+          <h1>Ts</h1>
+          <p>Tennessio</p>
+          <small>294</small>
+        </td>
+        <td onclick="Modal.open(118)" class="gn">
+          <small>118</small>
+          <h1>Og</h1>
+          <p>Oganessio</p>
+          <small>294</small>
+        </td>
+      </tr>
+      <!--Linha invisível-->
+      <tr>
+
+      </tr>
+      <!--6º Período Extensão-->
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td onclick="Modal.open(57)" class="transicao-interna">
+          <small>57</small>
+          <h1>La</h1>
+          <p>Lantânio</p>
+          <small>138.905</small>
+        </td>
+        <td onclick="Modal.open(58)" class="transicao-interna">
+          <small>58</small>
+          <h1>Ce</h1>
+          <p>Cério</p>
+          <small>140.11</small>
+        </td>
+        <td onclick="Modal.open(59)" class="transicao-interna">
+          <small>59</small>
+          <h1>Pr</h1>
+          <p>Praseodímio</p>
+          <small>1.007</small>
+        </td>
+        <td onclick="Modal.open(60)" class="transicao-interna">
+          <small>60</small>
+          <h1>Nd</h1>
+          <p>Neodímio</p>
+          <small>144.24</small>
+        </td>
+        <td onclick="Modal.open(61)" class="transicao-interna">
+          <small>61</small>
+          <h1>Pm</h1>
+          <p>Promécio</p>
+          <small>145</small>
+        </td>
+        <td onclick="Modal.open(62)" class="transicao-interna">
+          <small>62</small>
+          <h1>Sm</h1>
+          <p>Samário</p>
+          <small>150.36</small>
+        </td>
+        <td onclick="Modal.open(63)" class="transicao-interna">
+          <small>63</small>
+          <h1>Eu</h1>
+          <p>Európio</p>
+          <small>151.96</small>
+        </td>
+        <td onclick="Modal.open(64)" class="transicao-interna">
+          <small>64</small>
+          <h1>Gd</h1>
+          <p>Gadolíneo</p>
+          <small>157.25</small>
+        </td>
+        <td onclick="Modal.open(65)" class="transicao-interna">
+          <small>65</small>
+          <h1>Tb</h1>
+          <p>Térbio</p>
+          <small>158.92</small>
+        </td>
+        <td onclick="Modal.open(66)" class="transicao-interna">
+          <small>66</small>
+          <h1>Dy</h1>
+          <p>Disprósito</p>
+          <small>162.50</small>
+        </td>
+        <td onclick="Modal.open(67)" class="transicao-interna">
+          <small>67</small>
+          <h1>Ho</h1>
+          <p>Hólmio</p>
+          <small>164.93</small>
+        </td>
+        <td onclick="Modal.open(68)" class="transicao-interna">
+          <small>68</small>
+          <h1>Er</h1>
+          <p>Érbio</p>
+          <small>167.25</small>
+        </td>
+        <td onclick="Modal.open(69)" class="transicao-interna">
+          <small>69</small>
+          <h1>Tm</h1>
+          <p>Túlio</p>
+          <small>168.93</small>
+        </td>
+        <td onclick="Modal.open(70)" class="transicao-interna">
+          <small>70</small>
+          <h1>Yb</h1>
+          <p>Itérbio</p>
+          <small>173.05</small>
+        </td>
+      </tr>
+      <!--7º Período Extensão-->
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td onclick="Modal.open(89)" class="transicao-interna">
+          <small>89</small>
+          <h1>Ac</h1>
+          <p>Actínio</p>
+          <small>227</small>
+        </td>
+        <td onclick="Modal.open(90)" class="transicao-interna">
+          <small>90</small>
+          <h1>Th</h1>
+          <p>Tório</p>
+          <small>232.03</small>
+        </td>
+        <td onclick="Modal.open(91)" class="transicao-interna">
+          <small>91</small>
+          <h1>Pa</h1>
+          <p>Protactínio</p>
+          <small>231.03</small>
+        </td>
+        <td onclick="Modal.open(92)" class="transicao-interna">
+          <small>92</small>
+          <h1>U</h1>
+          <p>Urânio</p>
+          <small>238.02</small>
+        </td>
+        <td onclick="Modal.open(93)" class="transicao-interna">
+          <small>93</small>
+          <h1>Np</h1>
+          <p>Neptúnio</p>
+          <small>237</small>
+        </td>
+        <td onclick="Modal.open(94)" class="transicao-interna">
+          <small>94</small>
+          <h1>Pu</h1>
+          <p>Plutônio</p>
+          <small>244</small>
+        </td>
+        <td onclick="Modal.open(95)" class="transicao-interna">
+          <small>95</small>
+          <h1>Am</h1>
+          <p>Amerício</p>
+          <small>243</small>
+        </td>
+        <td onclick="Modal.open(96)" class="transicao-interna">
+          <small>96</small>
+          <h1>Cm</h1>
+          <p>Cúrio</p>
+          <small>247</small>
+        </td>
+        <td onclick="Modal.open(97)" class="transicao-interna">
+          <small>97</small>
+          <h1>Bk</h1>
+          <p>Berquélio</p>
+          <small>247</small>
+        </td>
+        <td onclick="Modal.open(98)" class="transicao-interna">
+          <small>98</small>
+          <h1>Cf</h1>
+          <p>Califórnio</p>
+          <small>251</small>
+        </td>
+        <td onclick="Modal.open(99)" class="transicao-interna">
+          <small>99</small>
+          <h1>Es</h1>
+          <p>Einstêinio</p>
+          <small>252</small>
+        </td>
+        <td onclick="Modal.open(100)" class="transicao-interna">
+          <small>100</small>
+          <h1>Fm</h1>
+          <p>Férmio</p>
+          <small>257</small>
+        </td>
+        <td onclick="Modal.open(101)" class="transicao-interna">
+          <small>101</small>
+          <h1>Md</h1>
+          <p>Mendelévio</p>
+          <small>258</small>
+        </td>
+        <td onclick="Modal.open(102)" class="transicao-interna">
+          <small>102</small>
+          <h1>No</h1>
+          <p>Nobélio</p>
+          <small>259</small>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<div class="modal-overlay">
+  <div id="card">
+  </div>
+</div>
+<script src="./scripts/scripts-tabela.js">
+</script>
+</body>
+</html>

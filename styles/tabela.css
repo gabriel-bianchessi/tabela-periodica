@@ -1,0 +1,114 @@
+
+.tabela {
+  width: min(90vw, 800px);
+  margin: auto;
+
+  overflow: auto;
+  z-index: 0;
+}
+
+table { 
+  width: 100%;
+  overflow: auto;
+}
+
+table tbody tr td {
+  cursor: pointer;
+  text-align: center;
+
+  border-radius: 0.25rem;
+
+  padding: 0.2rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+.hidrogenio {
+  background: #fad038;
+}
+.alcalino {
+  background: var(--alacalinos);
+}
+
+.at {
+  background: var(--alcalino-terrosos);
+}
+
+.metais-transicao {
+  background: var(--metais-transicao);
+}
+
+.outros-metais {
+  background: var(--outros-metais);
+}
+
+.nao-metais {
+  background: var(--nao-metais);
+}
+
+.transicao-interna {
+  background: var(--transicao-interna);
+}
+
+.gn {
+  background: var(--gases-nobres);
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0,0,0, 0.7);
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+  
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 1;
+  transition: 0.2s all;
+}
+
+.modal-overlay.working {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s all;
+}
+
+#card {
+  background: var(--anotada2);
+  padding: 2.4rem;
+
+  position: relative;
+  z-index: 2;
+
+  border-radius: 0.5rem;
+}
+
+#card img{
+  width: 1rem;
+  height: 1rem;
+
+  cursor: pointer;
+}
+
+#card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#card .elemento-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 0.2rem;
+}

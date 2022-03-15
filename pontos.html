@@ -1,0 +1,169 @@
+<html lang="pt-BR">
+  <head>
+    <title>Pontos importantes</title>
+    <meta charset="UTF-8">
+    <link href="styles/styles.css" type="text/css" rel="stylesheet">
+    <link href="styles/pontos.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <script type="text/javascript">
+      window.onload = () => {
+        const menuItems = document.querySelectorAll('ul li a');
+
+        menuItems.forEach(item => {
+          item.addEventListener('click', scrollToIdClicked)
+        })
+
+        function getScrollTopByHref(element) {
+          const id = element.getAttribute('href');
+          return document.querySelector(id).offsetTop;
+        }
+
+        function scrollToIdClicked(event) {
+          event.preventDefault();
+          const to = getScrollTopByHref(event.target) - 120;
+
+          ScrollToHere(to);
+        }
+
+        function ScrollToHere(to) {
+          window.scroll({
+            top: to,
+            behavior: "smooth",
+          });
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-right">
+        <a href="index.html"><h1>Tabela Periódica</h1></a>
+      </div>
+      <div class="nav-left">
+        <a href="#">Pontos Importantes</a>
+        <a href="apps.html">Apps Semelhantes</a>
+        <a href="perguntas.html">Perguntas e Respostas</a>
+        <a href="refs.html">Referências</a>
+      </div>
+    </nav>
+
+    <div id="corpo">
+      <h1>Pontos Importantes</h1>
+      <ul>
+        <li>
+          <a href="#z">Numero Atômico</a>
+        </li>
+        <li>
+          <a href="#elemento">Elemento químico</a>
+        </li>
+        <li>
+          <a href="#nmassa">Número de massa</a>
+        </li>
+        <li>
+          <a href="#massa">Massa Atômica</a>
+        </li>
+        <li>
+          <a href="#proton">Prótons</a>
+        </li>
+        <li>
+          <a href="#eletron">Elétrons</a>
+        </li>
+        <li>
+          <a href="#neutron">Nêutrons</a>
+        </li>
+      <div class="conteudo">
+        <h2 id="proton">Prótons</h2>
+        <p>
+          Particulas positivas que se encontram no núcleo do átomo. São eles que são responsáveis
+          por dar as características individuais a cada elemento.
+        </p>
+        <p>
+          Sua carga é 1,6 x 10-19C, mas para efeito didático, dizemos que ela é +1.
+        </p>
+        <p>Ele foi descoberto no século XX por Ernest Rutherford(1871-1937)</p>
+        <h2 id="eletron">Elétrons</h2>
+        <p>
+          O elétron é uma partícula subatômica que circunda o núcleo, na eletrosfera. Ele possui carga 
+          negativa e fica "preso" ao núcleo por ligações eletromagnéticas. São eles que definem a carga 
+          do átomo e são eles os reponsáveis pelas ligações entre um átomo e outro.
+        </p>
+        <p>
+          Sua unidade de medida, elétron-volt para joule, é 1,602 177 33 (49) x 10<sup>19</sup>. Sua massa 
+          é considerada desprezível.
+        </p>
+        <p>
+          O elétron foi descoberto por J. J. Thomson(1856-1940) em 1877 em um estudo de raios catódicos.
+          Sua descoberta provou que o átomo era sim divisível, e o nome átomo uqe significa indivisível
+          passou a ser somente algo simbolico.
+        </p>
+        <h2 id="neutron">Nêutrons</h2>
+        <p>
+          O Nêutron é uma pequena partícula que fica no núcleo do átomo. Ele tem carga neutra,
+          como seu próprio nome já sugere. Todos os átomos, exceto o hidrogênio possuem Nêutrons
+          em seu núcleo
+        </p>
+        <p>
+          Eles foram descoberto em 1932. Sua existência foi sugerida por Ernest Rutherford(1871-1937) na
+          década de 20 e comprovada por James Chadwick(1891-1974) em um estudo sobre radioatividade.
+        </p>
+        <p>
+          Para calcular quantos nêutrons um átomo possui basta subtrairmos o número atómico do número 
+          da massa.
+        </p>
+        <h2 id="z">Numero Atômico</h2>
+        <p>
+          O número atômico é definido pela letra Z. Para saber o seu valor basta conhecer 
+          o número de prótons presente no átomo.
+        </p>
+        <p>
+
+        </p>
+        <h2 id="elemento">Elemento Químico</h2>
+        <p>
+          São átomos que possuem o mesmo número atômico. Esse átomos recebem um mesmo nome 
+          e símbolo na tabela periódica. Dois elementos diferentes não podem possuir o mesmo número de 
+          prótons.
+        </p>
+        <p>
+          Existem diversas formas de se representar um elemento químico, mas como convenção em nossa aulas de química
+          utilizamos a seguinte notação:
+        </p>
+
+        <div class="elemento">
+          <div class="n_massa">
+            <p>A</p>
+          </div>
+          <div class="n_atomico">
+            <p>Z</p>
+          </div>
+          <div class="e_nome">
+            <h1>X</h1>
+          </div>
+        </div>
+
+        <h2 id="nmassa">Número de massa</h2>
+        <p>
+          É indicado pela letra A maiúscula. Ele corresponde a soma dos prótons e dos nêutrons de um determinado 
+          elemento.
+        </p>
+        <p>
+          Para calcular o número de massa temos duas fórmulas: A= p+n ou A=Z+n
+        </p>
+        <h2 id="massa">Massa Atômica</h2>
+        <p>
+          A massa atômica é a média do número ponderada dos isótopos, que são átomos do mesmo elemento mas
+          com número de nêutrons diferente.
+        </p>
+        <p>
+          Uma unidade de massa atômica equivale a 1,66 * 10-24 g, o que é um doze avos o peso do carbono
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
